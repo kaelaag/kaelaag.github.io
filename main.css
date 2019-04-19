@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'DIN Condensed Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DIN Condensed Bold'), url('DINCondensed-Bold.woff') format('woff');
+}
+
+#homepage{
+    background-image: url(homepage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#learnmore{
+    padding: 0; 
+    font-size: 1.5vw; 
+    color: black;
+    padding-top: 5px;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+.text{
+    padding: 330px 0;
+    font-family: 'DIN Condensed Bold', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.line{
+    border: .5px;
+    border-style: solid;
+    border-color: white;
+    width: 50vw;
+}
+
+.btn{
+    height: 3vw;
+    width: 9vw;
+}
+
