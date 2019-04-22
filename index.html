@@ -10,19 +10,69 @@
         <link rel="stylesheet" href="main.css">
         <link rel="icon" href="favicon.png" type="image/png"/>
         <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="html5up-aerial/assets/css/main.css" rel="stylesheet"/>
     </head>
-        <body>
+        <body class="is-preload">
             <div class="container">
-                <div class="text" id="homepage">
-                    <h1 style="font-size: 4vw; padding-top: 6px"> We are</h1>
-                    <h1 style="font-size: 9vw; line-height: 80px"> The moo-vement</h1>
-                     <hr class="line">
-                    <h1 style="font-size: 2vw; line-height: 70px">Join our mission to change the world</h1>
-                    <button type="button" class="btn btn-light btn-lg text" id="learnmore">Learn More</button>
+                <div id="homepage">
+                    <div role="navigation" class="d-flex justify-content-center">
+                        <nav class="navbar navbar-expand-md navbar-light" style="padding-bottom: 0 !important;">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class=" nav navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-text" href="#">About Us</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-text" href="#">Health</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-text" href="#">Environment</a>
+                                  </li>
+                                 </ul>
+                            </div>
+                            <a class="navbar-brand" style="padding-top: 15px !important; padding-left: 3vw !important; padding-right: 3vw !important;" href="#">
+                                <img src="favicon.png" width="45" height="45" alt=""/>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class=" nav navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-text" href="#">Economy</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-text" href="#">Solutions</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav-text" href="#">Sources</a>
+                                  </li>
+                                 </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div>
+                        <hr class="line" id="nav-style">
+                    </div>
+                    <div class="text" id="wrapper">
+                        <h1 style="font-size: 4vw; padding-top: 6px; padding-bottom: 15px"> We are</h1>
+                        <h1 id="spacing"style="font-size: 9vw;"> The moo-vement</h1>
+                        <hr class="line">
+                        <h1 style="font-size: 2vw; line-height: 70px">Join our mission to change the world</h1>
+                        <button type="button" class="btn btn-light btn-lg text" id="learnmore">
+                            <a href="#aboutus"></a>
+                            Learn More
+                        </button>
+                    </div>
                 </div>
             </div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="bootstrap/js/bootstrap.min.js"></script>
+            <script>
+                window.onload = function() { document.body.classList.remove('is-preload'); }
+                window.ontouchmove = function() { return false; }
+                window.onorientationchange = function() { document.body.scrollTop = 0; }
+		    </script>  
         </body>
     
     
