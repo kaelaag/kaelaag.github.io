@@ -24,12 +24,24 @@
     padding-top: .3vw;
 }
 
-html{
-    scroll-behavior: smooth;
+#aboutus{
+    padding: 0;
+    color: black !important;
+}
+
+#aboutus-text{
+    font-size: 5vw;
+    padding: 40px;
+    text-align: left;
+}
+
+button{
+    scroll-behavior: smooth !important;
 }
 
 body{
     margin: 0;
+    overflow: scroll !important;
 }
 
 h1{
@@ -43,13 +55,14 @@ hr{
 
 a{
     border-style: hidden !important;
+    padding-left: 1vw !important;
 }
 
 .text{
-    padding: 248px 0;
+    padding-top: 248px;
     font-family: 'DIN Condensed Bold', sans-serif;
     text-align: center;
-    color: #ffffff;
+    color: white;
     letter-spacing: 1px;
 }
 
@@ -72,20 +85,46 @@ a{
 
 #nav-style{
     width: 90vw;
-    padding: 0;
+    margin-top: 80px !important;
+    position: fixed;
+    margin-left: 5vw !important;
 }
 
 .nav-text{
     font-family: 'DIN Condensed Bold', sans-serif;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2vw !important;
     color: white !important;
     letter-spacing: 1px;
-    padding-top: 25px !important;
-    padding-right: 3vw !important;
-    padding-left: 3vw !important;
+    margin-top: 5px;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 5px !important;
 }
 
 #spacing{
     line-height: 100px !important;
+}
+
+li a {
+    padding: 4px;
+    text-decoration: none;
+    display:;
+}
+
+li a.active {
+    background-color: white;
+    color: #bfe4f9 !important;
+}
+
+.btn-outline-light:hover{
+    color: #bfe4f9 !important;
+}
+
+.btn{
+    border-top-style: none !important;
+    border-bottom-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important
 }
