@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="stylesheet" href="main.css">
-        <link rel="icon" href="favicon.png" type="image/png"/>
+        <link rel="icon" href="favicon.svg" type="image/svg"/>
         <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="html5up-aerial/assets/css/main.css" rel="stylesheet"/>
     </head>
@@ -16,49 +16,46 @@
             <div class="container">
                 <div id="homepage">
                     <div role="navigation">
-                        <nav class="d-flex justify-content-around navbar navbar-expand-md fixed-top row" id="navbar-form">
+                        <nav class="d-flex flex-row justify-content-around navbar navbar-light navbar-expand-md fixed-top" id="navbar-form">
                                 <button class="navbar-toggler" style="background-color: white;" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="flex-grow:0;">
-                                <div class="d-flex justify-content-around" style="max-height: 50px; margin-left: 25px;">
-                                <ul class="navbar-nav">
-                                  <li>
+                                    <ul class="navbar-nav align">
+                                      <li>
                                         <a class="nav-link" href="#aboutus">
                                             <button class="btn btn-outline-light nav-text nav-text-scrolled" style="width: 10.4vw; height: 3.5vw; text-align: center !important" type="button">
                                                 ABOUT US
                                             </button>
                                         </a>
-                                  </li>
-                                  <li>
-                                    <a class="nav-link" href="#">
-                                        <button class="btn btn-outline-light nav-text nav-text-scrolled" style="width: 8.7vw; height: 3.5vw; text-align: center !important" type="button">
-                                            HEALTH
-                                        </button>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a class="nav-link" href="#">
-                                        <button class="btn btn-outline-light nav-text nav-text-scrolled" style="width: 13.65vw; height: 3.5vw; text-align: center !important" type="button">
-                                            ENVIRONMENT
-                                        </button>
-                                    </a>
-                                  </li>
-                                </ul>
-                            </div>
-                            </div>
-                            <div class="d-flex justify-content-around" style="max-height: 50px;">
-                                <ul class="navbar-nav">
-                                  <li>
-                                    <a class="navbar-brand" style="max-block-size: inherit !important;padding-bottom: 0 !important;padding-left: 18px !important;padding-right: 15px !important; padding-top: 3px !important;" href="#">
-                                        <img src="favicon.png" width="47" height="47" alt=""/>
-                                    </a>
-                                  </li>
-                                </ul>
-                            </div>
+                                      </li>
+                                      <li>
+                                        <a class="nav-link" href="#">
+                                            <button class="btn btn-outline-light nav-text nav-text-scrolled" style="width: 8.7vw; height: 3.5vw; text-align: center !important" type="button">
+                                                HEALTH
+                                            </button>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="nav-link" href="#">
+                                            <button class="btn btn-outline-light nav-text nav-text-scrolled" style="width: 13.65vw; height: 3.5vw; text-align: center !important" type="button">
+                                                ENVIRONMENT
+                                            </button>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                </div>
+                                <div style="height: 52px;">
+                                    <ul class="navbar-nav">
+                                      <li>
+                                        <a class="navbar-brand" style="padding-top: 1px !important; padding-left: 0px !important; padding-right: 0px !important;" href="#">
+                                            <img src="favicon.svg" width="52 !important" height="52 !important" alt=""/>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                </div>
                             <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="flex-grow:0;">
-                                <div class="d-flex justify-content-around" style="max-height: 50px; margin-right: 29px;">
-                                <ul class="navbar-nav">   
+                                <ul class="navbar-nav align">   
                                   <li>
                                     <a class="nav-link" href="#">
                                          <button class="btn btn-outline-light nav-text nav-text-scrolled" style="width: 10.2vw; height: 3.5vw; text-align: center !important;" type="button">
@@ -82,17 +79,14 @@
                                   </li>
                                  </ul>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
                     </div>
-                    <div>
                         <hr class="line" id="nav-style">
-                    </div>
                     <div class="text" id="wrapper">
                         <h1 style="font-size: 33px; padding-top: 9vw; padding-bottom: .75vw;"> WE ARE</h1>
                         <h1 id="spacing" style="font-size: 97px;"> THE MOO-VEMENT</h1>
                         <hr class="line">
-                        <h1 style="font-size: 19px; letter-spacing: .1vw !important; line-height: 62px;">JOIN OUR MISSION TO CHANGE THE WORLD</h1>
+                        <h1 style="font-size: 19px; letter-spacing: .05vw !important; line-height: 62px;">JOIN OUR MISSION TO CHANGE THE WORLD</h1>
                         <a href="#aboutus" style="padding-left: 1vw !important;">
                                 <button type="button" class="btn btn-light btn-lg text" id="learnmore">LEARN MORE</button>
                         </a>
@@ -221,22 +215,18 @@
                 window.onorientationchange = function() { document.body.scrollTop = 0; }
             </script>
             <script>
-                $(window).scroll(function(){
-                    if($(this).scrollTop() > 80){
-                        $('.navbar').addClass('navbar-light');
-                    } else {
-                        $('.navbar').removeClass('navbar-light');
-                    }
-                });
+                 $(window).scroll(function(){
+                 $('nav').toggleClass('scrolled', $(this).scrollTop() > 90);
+                 });
             </script>
             <script>
                  $(window).scroll(function(){
-                 $('hr').toggleClass('scrolled', $(this).scrollTop() > 80);
+                 $('hr').toggleClass('scrolled', $(this).scrollTop() > 90);
                  });
             </script>
             <script>
                 $(window).scroll(function(){
-                    if($(this).scrollTop() > 80){
+                    if($(this).scrollTop() > 90){
                         $('.nav-text-scrolled').addClass('ncol');
                     } else {
                         $('.nav-text-scrolled').removeClass('ncol');
@@ -245,7 +235,7 @@
             </script>
             <script>
                 $(window).scroll(function(){
-                    if($(this).scrollTop() > 80){
+                    if($(this).scrollTop() > 90){
                         $('.btn').addClass('mcol');
                     } else {
                         $('.btn').removeClass('mcol');

@@ -50,13 +50,16 @@ html{
 #learnmore{
     padding: 0 !important; 
     font-size: 17px; 
-    letter-spacing: .1vw;
+    letter-spacing: .05vw;
     color: black;
     padding-left: .3vw !important;
 }
 
 #aboutus{
-    padding: 3vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
     color: black !important;
 }
 
@@ -130,20 +133,21 @@ a{
 
 #nav-style{
     width: 90vw !important;
-    margin-top: 72px !important;
+    margin-top: 73px !important;
     position: fixed;
     left: 5vw !important;
 }
 
 #navbar-form{
-    padding-bottom: 11px !important;
-    padding-top: 12px !important;
+    height: 74px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
     max-block-size: 95px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-.navbar.navbar-light{
+.navbar-light.scrolled{
     background-color: white !important;
     box-shadow: 0px 1px 7px 0px #d6d6d6;
     vertical-align: baseline !important;
@@ -152,7 +156,7 @@ a{
     transition: 450ms ease;
 }
 
-.navbar{
+.navbar-light{
     transition: 450ms ease-out;
 }
 
@@ -163,6 +167,14 @@ a{
 #nav-style.scrolled{
     border-color: transparent !important;
     transition: 300ms ease;
+}
+
+.navbar-nav{
+    vertical-align: middle;
+}
+
+.align{
+    height: 50px;
 }
 
 .nav-text{
@@ -183,7 +195,6 @@ a{
 li a {
     padding: 4px;
     text-decoration: none;
-    max-block-size: 4vw;
 }
 
 li a.active {
