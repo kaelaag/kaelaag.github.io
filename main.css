@@ -5,6 +5,32 @@
     src: local('DIN Condensed Bold'), url('DINCondensed-Bold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'PFDinTextCondPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextCondPro-Regular'), url('PFDinTextCondPro-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'PFDinTextCondPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextCondPro-Bold'), url('PFDinTextCondPro-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DINPro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Bold'), url('DINPro-Bold tr.woff') format('woff');
+}
+@font-face {
+    font-family: 'DINPro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro Black'), url('DINPro-Black tr.woff') format('woff');
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -22,10 +48,11 @@ html{
 }
 
 #learnmore{
-    padding: 0; 
-    font-size: 1.5vw; 
+    padding: 0 !important; 
+    font-size: 17px; 
+    letter-spacing: .1vw;
     color: black;
-    padding-top: .3vw;
+    padding-left: .3vw !important;
 }
 
 #aboutus{
@@ -33,11 +60,19 @@ html{
     color: black !important;
 }
 
-#aboutus-text{
-    font-size: 3.5rem;
-    padding: 40px;
+#aboutus-head{
+    font-size: 3rem;
+    padding: 3vw;
     text-align: left;
 }
+
+#carousel-head{
+    font-family: 'DINPro Black';
+    padding: 30px;
+    font-size: 2.3vw;
+    justify-content: center !important;
+}
+
 
 .meet-team-text{
     font-size: 1.5rem !important;
@@ -65,15 +100,14 @@ hr{
 
 a{
     border-style: hidden !important;
-    padding-left: 1vw !important;
 }
 
 .text{
     padding-top: 248px;
-    font-family: 'DIN Condensed Bold', sans-serif;
+    font-family: 'DINPro Black', sans-serif;
     text-align: center;
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 .line{
@@ -81,11 +115,12 @@ a{
     border-style: solid;
     border-color: white;
     width: 50vw;
+    margin-top: 1vw !important;
 }
 
 .btn{
-    height: 3vw;
-    width: 9vw;
+    height: 43px;
+    width: 140px;
 }
 
 .navbar-brand{
@@ -94,23 +129,51 @@ a{
 }
 
 #nav-style{
-    width: 90vw;
-    margin-top: 80px !important;
+    width: 90vw !important;
+    margin-top: 72px !important;
     position: fixed;
-    margin-left: 5vw !important;
+    left: 5vw !important;
+}
+
+#navbar-form{
+    padding-bottom: 11px !important;
+    padding-top: 12px !important;
+    max-block-size: 95px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.navbar.navbar-light{
+    background-color: white !important;
+    box-shadow: 0px 1px 7px 0px #d6d6d6;
+    vertical-align: baseline !important;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    transition: 450ms ease;
+}
+
+.navbar{
+    transition: 450ms ease-out;
+}
+
+.nav-text-scrolled.ncol{
+    color: #bfe4f9 !important;
+}
+
+#nav-style.scrolled{
+    border-color: transparent !important;
+    transition: 300ms ease;
 }
 
 .nav-text{
-    font-family: 'DIN Condensed Bold', sans-serif;
+    font-family: 'DINPro Bold', sans-serif;
     text-align: center;
-    font-size: 2vw !important;
+    font-size: 1.6vw !important;
     color: white !important;
-    letter-spacing: 1px;
-    margin-top: 5px;
     padding-bottom: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    padding-top: 5px !important;
+    padding-top: 0 !important;
 }
 
 #spacing{
@@ -120,12 +183,11 @@ a{
 li a {
     padding: 4px;
     text-decoration: none;
-    display:;
+    max-block-size: 4vw;
 }
 
 li a.active {
     background-color: white;
-    color: #bfe4f9 !important;
 }
 
 .btn-outline-light:hover{
@@ -139,4 +201,7 @@ li a.active {
     border-right-style: none !important
 }
 
-
+.btn.mcol:hover{
+    background-color: #bfe4f9 !important;
+    color: white !important;
+}
