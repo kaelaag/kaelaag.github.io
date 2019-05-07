@@ -192,6 +192,21 @@ a{
     line-height: 100px !important;
 }
 
+.mouse-hover{
+  cursor: pointer;
+}
+
+.side-margin{
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 1150px){
+  #width-pictures{
+    flex: 3 1 14.2857%;
+    max-width: 14.2857%;
+  }
+}
+
 li a {
     padding: 4px;
     text-decoration: none;
