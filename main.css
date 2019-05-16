@@ -15,8 +15,9 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Background Initializer */
 #homepage{
-    background-image: url(homepage.png);
+    background-image: url(homepage.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -25,194 +26,101 @@ html{
     bottom: -51px;
     left: 0;
     right: 0;
+    text-align: center !important;
+}
+
+/* Nav Styling */
+.nav-pre{
+    background-color: white;
+    font-family: 'DINPro Black';
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px -2px 7px 0px #808080;
+}
+
+.nav-text{
+    color: black !important;
+    font-family: 'DINPro Black' !important;
+    
+}
+
+/* Body Text */
+.text{
+    font-family: 'DINPro Black';
+    color: black;
+    text-align: center;
+}
+
+.body-text{
+    padding-top: 40vh;
+}
+
+#we{
+    font-size: 43px;
+    margin-bottom: 1.5rem;
+}
+
+#moovement{
+    font-size: 100px;
+    line-height: 5.5rem;
+    margin-top: .25vw;
+    margin-bottom: 1rem;
+}
+
+#join{
+    font-size: 20px; 
+    letter-spacing: .05vw !important; 
+    line-height: 2.8rem; 
+    margin-bottom: 1vw;
 }
 
 #learnmore{
-    padding: 0 !important; 
-    font-size: 17px; 
+    font-size: 20px !important;
     letter-spacing: .05vw;
-    color: black;
-    padding-left: .3vw !important;
+    text-align: center;
 }
 
-#aboutus{
-    margin-left: 6vw;
-    margin-right: 6vw;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: black !important;
+.arrow{
+    left: 50%;
+    margin-top: 12vw;
 }
 
-#aboutus-head{
-    font-size: 3rem;
-    padding: 3vw;
-    text-align: left;
-}
-
-#carousel-head{
-    font-family: 'DINPro Black';
-    padding: 30px;
-    font-size: 2.3vw;
-    justify-content: center !important;
-}
-
-
-.meet-team-text{
-    font-size: 1.5rem !important;
-    letter-spacing: 0px !important;
-}
-
-body{
-    margin: 0;
-    overflow: scroll !important;
-}
-
-h1{
-    margin: 0;
-}
-
-h2{
-    font-size: 2rem !important;
-    text-decoration-line:underline;
-}
-
-hr{
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
+/* Line Styling */
 a{
     border-style: hidden !important;
 }
 
-.text{
-    padding-top: 248px;
-    padding-bottom: 350px;
-    font-family: 'DINPro Black', sans-serif;
-    text-align: center;
-    color: white;
-    letter-spacing: 0px;
+hr{
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
 }
 
 .line{
     border: .5px;
     border-style: solid;
-    border-color: white;
+    border-color: black;
     width: 50vw;
-    margin-top: 1vw !important;
 }
 
-.btn{
-    height: 43px;
-    width: 140px;
+/* Buttons */
+.btn-outline-dark{
+    border-style: hidden !important;
+    margin-top: 5px;
 }
 
-.navbar-brand{
-    padding-left: 10.5vw;
-    margin-top: 9px !important;
-    margin-right: 10px !important;
-}
-
-#nav-style{
-    width: 90vw !important;
-    margin-top: 73px !important;
-    position: fixed;
-    left: 5vw !important;
-}
-
-#navbar-form{
-    height: 74px !important;
-    padding-bottom: 0px !important;
-    padding-top: 0px !important;
-    max-block-size: 95px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.navbar-light.scrolled{
-    background-color: white !important;
-    box-shadow: 0px 1px 7px 0px #d6d6d6;
-    vertical-align: baseline !important;
-    border-bottom-left-radius:10.5px;
-    border-bottom-right-radius:10.5px;
-    transition: 450ms ease;
-}
-
-.navbar-light{
-    transition: 450ms ease-out;
-}
-
-.nav-text-scrolled.ncol{
-    color: #bfe4f9 !important;
-}
-
-#nav-style.scrolled{
-    border-color: transparent !important;
-    transition: 300ms ease;
-}
-
-.navbar-nav{
-    vertical-align: baseline !important;
-}
-
-.align{
-    margin-top: .5vw;
-    height: 45px;
-}
-
-.nav-text{
-    font-family: 'DINPro Bold', sans-serif;
-    text-align: center;
-    letter-spacing: ..07vw;
-    font-size: 1.2vw !important;
+.btn-outline-dark:hover{
     color: white !important;
-    padding-bottom: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    padding-top: 0 !important;
+    background-color: black !important;
 }
 
-#spacing{
-    line-height: 100px !important;
+.btn-lg{
+    line-height: 1.15 !important;
+    font-size: 18px !important;
 }
 
-.mouse-hover{
-  cursor: pointer;
+.btn-dark{
+    background-color: black !important;
+    line-height: 1.5 !important;
+    border-color: black !important;
 }
-
-.side-margin{
-  margin: 0 auto 0 auto;
-}
-
-@media (min-width: 1150px){
-  #width-pictures{
-    flex: 3 1 14.2857%;
-    max-width: 14.2857%;
-  }
-}
-
-li a {
-    padding: 4px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: white;
-}
-
-.btn-outline-light:hover{
-    color: #bfe4f9 !important;
-}
-
-.btn{
-    border-top-style: none !important;
-    border-bottom-style: none !important;
-    border-left-style: none !important;
-    border-right-style: none !important
-}
-
-.btn.mcol:hover{
-    background-color: #bfe4f9 !important;
-    color: white !important;
-}
-

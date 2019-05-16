@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="41px" viewBox="0 0 96 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-19.8%" y="-64.0%" width="138.3%" height="228.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="arrow" transform="translate(4.000000, 1.000000)" stroke="#FFFFFF" stroke-width="7">
+            <g filter="url(#filter-1)" transform="translate(4.000000, 5.000000)">
+                <path d="M0.202020202,0.204918033 L40,24.795082" id="Line"></path>
+                <path d="M40.5,0 L80.5,24.5" id="Line-Copy" transform="translate(60.500000, 12.500000) scale(-1, 1) translate(-60.500000, -12.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
