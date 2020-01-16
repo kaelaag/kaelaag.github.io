@@ -13,11 +13,17 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.container{
+    max-width: 90% !important;
 }
 
 /* Background Initializer */
 #homepage{
     background-image: url(homepage.svg);
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -37,6 +43,7 @@ html{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0px -2px 7px 0px #808080;
+    padding-left: 2rem !important;
 }
 
 .nav-text{
@@ -45,20 +52,23 @@ html{
     
 }
 
-/* Body Text */
+/* Text */
 .text{
     font-family: 'DINPro Black';
     color: black;
     text-align: center;
 }
 
+/* Body Text */
 .body-text{
-    padding-top: 40vh;
+    padding-top: 347px;
+    padding-bottom: 190px;
 }
 
 #we{
     font-size: 43px;
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .9rem;
 }
 
 #moovement{
@@ -75,8 +85,8 @@ html{
     margin-bottom: 1vw;
 }
 
-#learnmore{
-    font-size: 20px !important;
+#learnmore{ 
+    font-size: 19px; 
     letter-spacing: .05vw;
     text-align: center;
 }
@@ -86,9 +96,182 @@ html{
     margin-top: 12vw;
 }
 
+/* About Us */
+#newsletter:hover{
+    color: black !important;
+}
+
+#aboutus{
+    padding-top: 60px;
+    margin-top: -90px;
+    padding-bottom: 80px;
+}
+
+.about-body{
+    font-family: 'DINPro Bold';
+    color: #343a40 !important;
+}
+
+.jumbotron{
+    background-color: white !important;
+    box-shadow:  0 1.375rem 2.25rem -0.75rem #b7b7b7;
+    border-radius: 12px !important;
+    padding-top: 7rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.jumbo-text{
+    font-size: 1.6rem;
+}
+
+#v1{
+    border-left: 1px solid #8dcdf1;
+    height: 17vh;
+}
+
+#v2{
+    border-top: 1px solid #8dcdf1;
+    margin-bottom: 1.5rem!important;
+    margin-top: 1.5rem!important;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    display: block;
+    unicode-bidi: isolate;
+    width: 79.5vw;
+}
+
+/* Meet the Team */
+#team{
+    padding-top: 60px;
+    margin-top: -90px;
+    padding-bottom: 80px;
+}
+
+#team-title{
+    font-size: 2.5rem;
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+
+.card{
+    background-color: white !important;
+    border: transparent !important;
+    box-shadow: 0 1.375rem 2.25rem -0.75rem #b7b7b7;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.card-profile{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-avatar{
+    max-width: 130px;
+    max-height: 130px;
+    width: 130px;
+    margin: -50px auto 0;
+    border-radius: 60% !important;
+}
+
+.card-header{
+    background-color: transparent !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+    box-shadow: 0 16px 38px -12px rgba(88, 88, 88,.15), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+
+.card-footer{
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.card-name{
+    font-family: 'DINPro Bold' !important;
+}
+
+.card-role{
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 550 !important;
+}
+
+.card-text{
+    font-family: 'DINPro Bold' !important;
+    font-size: .875rem;
+    color: #999;
+}
+
+.card-body{
+    margin-top: 15px;
+}
+
+.card-title{
+    margin-top: .625rem;
+    margin-bottom: .75rem;
+}
+
+.card-category{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-footer{
+    background-color: transparent !important;
+    border-top: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 1.25rem !important;
+    margin-top: -15px;
+}
+
+p{
+    margin-bottom: 10px !important;
+}
+
+/* Contact Us */
+.contactus-background{
+    background-image: url(homepage.svg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    padding-top: 9rem;
+}
+
+.contact-title{
+    font-size: 2rem !important;
+    text-align: left !important;
+}
+
+.card-contact-avatar{
+    background: #8dcdf1 !important;
+    padding: 1rem 15px !important;
+    margin-top: -30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 7px !important;
+    box-shadow: 0 5px 20px 0 rgba(235, 248, 255, 0.41), 0 13px 24px -11px rgb(133, 214, 255);
+}
+
+.card-shadow{
+    box-shadow: -1.5rem 1.375rem 2.25rem -1.75rem #b9b9b98a !important;
+}
+
+#find-shade{
+    background: white !important;
+    border-radius: 10px;
+}
+
 /* Line Styling */
 a{
-    border-style: hidden !important;
+    border-style: hidden !important; 
+}
+
+a:hover{
+    color: black !important;
+    text-decoration: none !important;
 }
 
 hr{
