@@ -245,20 +245,20 @@
                 </div>
                 <div class="col-md-5">
                     <div class="card card-shadow card-profile">
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation" method="post" name="myemailform" action="form-to-email.php" novalidate>
                             <div class="card-header card-contact-avatar">
                                 <h4 class="card-title" style="color: white !important; font-size: 1.5rem">Contact Us</h4>
                             </div>
                             <div class="card-body">
                                 <div class="form-row">
                                     <div class="col-6 mb-3">
-                                        <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required>
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
                                         <div class="valid-feedback">
                                             Looks good!
                                         </div>
                                     </div>
                                     <div class="col-6 mb-3">
-                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required>
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
                                         <div class="valid-feedback">
                                             Looks good!
                                         </div>
@@ -266,7 +266,7 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col-12 mb-3">
-                                        <input type="email" class="form-control" id="validationCustom03" placeholder="Email Address" required>
+                                        <input type="email" class="form-control" name="email" placeholder="Email Address" required>
                                         <div class="valid-feedback">
                                             Looks good!
                                         </div>
@@ -274,7 +274,7 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col mb-3">
-                                        <textarea class="form-control" id="validationTextarea" placeholder="Write your message here." required></textarea>
+                                        <textarea class="form-control" name="message" placeholder="Write your message here." required></textarea>
                                         <div class="invalid-feedback">
                                             Please enter a message in the textarea.
                                         </div>
@@ -282,7 +282,7 @@
                                 </div>
                             </div>
                             <div class="card-footer justify-content-between">
-                                <button class="btn btn-dark" type="submit">Submit form</button>
+                                <button class="btn btn-dark" type="submit" value="Send Form">Submit form</button>
                             </div>
                         </form>
                     </div>
