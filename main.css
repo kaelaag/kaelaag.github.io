@@ -102,7 +102,7 @@ html{
 }
 
 #aboutus{
-    padding-top: 60px;
+    padding-top: 7rem;
     margin-top: -90px;
     padding-bottom: 80px;
 }
@@ -237,7 +237,7 @@ p{
     background-size: cover;
     background-position: 50%;
     position: relative;
-    padding-top: 9rem;
+    padding-top: 11rem;
 }
 
 .contact-title{
