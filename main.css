@@ -26,13 +26,23 @@ html{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center center;
     position: absolute;
     top: 0;
-    bottom: -51px;
+    bottom: 0;
     left: 0;
     right: 0;
     text-align: center !important;
+}
+
+.section-top{
+    padding-top: calc(7.5rem + 5.8125rem);
+}
+
+.section{
+    padding-bottom: 3.5rem;
+    position: relative;
+    display: block;
 }
 
 /* Nav Styling */
@@ -60,11 +70,6 @@ html{
 }
 
 /* Body Text */
-.body-text{
-    padding-top: 20rem;
-    padding-bottom: 10rem;
-}
-
 #we{
     font-size: 43px;
     margin-top: 1rem;
@@ -91,19 +96,14 @@ html{
     text-align: center;
 }
 
-.arrow{
-    left: 50%;
-    margin-top: 12vw;
-}
-
 /* About Us */
 #newsletter:hover{
     color: black !important;
 }
 
 #aboutus{
-    padding-top: 7rem;
-    margin-top: -90px;
+    padding-top: 6.5rem;
+    margin-top: -70px;
     padding-bottom: 80px;
 }
 
