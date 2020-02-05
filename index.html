@@ -11,6 +11,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg" />
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="html5up-aerial/assets/css/main.css" rel="stylesheet" />
+    <link href="bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet" />
 </head>
 
 <body class="is-preload">
@@ -26,7 +27,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#aboutus">
-                            <button class="btn btn-lg btn-outline-dark nav-text" style="" type="button">
+                            <button class="btn btn-lg btn-outline-dark nav-text" type="button">
                                 ABOUT US
                             </button>
                         </a>
@@ -39,7 +40,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#solutions">
                             <button class="btn btn-lg btn-outline-dark nav-text" type="button">
                                 SOLUTIONS
                             </button>
@@ -115,8 +116,102 @@
             </div>
         </div>
     </div>
+    <div class="text container" id="facts">
+        <p class="mx-auto text-center" id="facts-title">Facts</p>
+        <div class="row">
+            <div class="col">
+                <div class="list-group list-group-horizontal-sm" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action flex-fill active" id="list-meat-list" data-toggle="list" href="#meat" role="tab" aria-controls="meat">Meat Consumption</a>
+                    <a class="list-group-item list-group-item-action flex-fill" id="list-water-list" data-toggle="list" href="#water" role="tab" aria-controls="water">Water Usage</a>
+                    <a class="list-group-item list-group-item-action flex-fill" id="list-methane-list" data-toggle="list" href="#methane" role="tab" aria-controls="methane">Methan Emissions</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto" id="body-border">
+            <div class="col">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" style="letter-spacing: 0.25px" id="meat" role="tabpanel" aria-labelledby="list-meat-list">
+                        <div class="row pt-5 pb-4">
+                            <p class="mx-auto text-center" style="letter-spacing: 0.25px">How much meat does each country eat per capita? Click its name to find out</p>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#India" role="button" aria-expanded="false" aria-controls="India">India</a>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Algeria" aria-expanded="false" aria-controls="Algeria">Algeria</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Ukraine" aria-expanded="false" aria-controls="Ukraine">Ukraine</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#EuropeanUnion" aria-expanded="false" aria-controls="European Union">European Union</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#UnitedStates" aria-expanded="false" aria-controls="United States">United States</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse" id="India">
+                                    <div class="card">
+                                        <img src="india.svg" class="card-img px-3 py-3" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse" id="Algeria">
+                                    <div class="card">
+                                        <img src="algeria.svg" class="card-img px-3 py-3" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse" id="Ukraine">
+                                    <div class="card">
+                                        <img src="ukraine.svg" class="card-img px-3 py-3" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse" id="EuropeanUnion">
+                                    <div class="card">
+                                        <img src="eu.svg" class="card-img px-3 py-3" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse" id="UnitedStates">
+                                    <div class="card">
+                                        <img src="us.svg" class="card-img px-3 py-3" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="py-4 px-4 p-text">Each country's eating habits vary as a result of many different factors. India is shown to be one of the countries with the smallest meat consumption per capita. One factor that plays a role is cultural norms. In India, a majority of the population is Hindu and refrains from eating beef. Algeria also has a low meat consumption. One factor that plays a role is the high cost of meat, meaning in developing countries very little meat is consumed. As the standard of living increase, however, we see the rise in meat consumption as shown in the US.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="water" role="tabpanel" aria-labelledby="list-water-list">
+                        <div class="row pt-5">
+                            <p class="mx-auto text-center">Water Usage across different types of Milk</p>
+                        </div>
+                        <div class="container">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                        <div class="row">
+                            <p class="py-4 px-4 p-text">While most of the time Almond Milk gets a bad rap for the amount of water it takes to produce, it seems that the overwhelming amount of water that Dairy Milk requires goes unnoticed. </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="methane" role="tabpanel" aria-labelledby="list-methane-list">
+                        ,,,
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="text container" id="team">
-        <p mx-auto text-center id="team-title">Meet the <span style="color:#8dcdf1">Team</span>!</p>
+        <p class="mx-auto text-center" id="team-title">Meet the <span style="color:#8dcdf1">Team</span>!</p>
         <div class="row">
             <div class="col">
                 <div class="card card-profile">
@@ -305,6 +400,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
         window.onload = function() {
             document.body.classList.remove('is-preload');
@@ -335,6 +431,42 @@
                 });
             }, false);
         })();
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Dairy Milk', 'Almond Milk', 'Soy Milk', 'Oat Milk'],
+                datasets: [{
+                    label: 'Liters of Water used',
+                    data: [120, 74, 10, 15],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
     </script>
 
 </body>

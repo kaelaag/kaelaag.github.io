@@ -4,6 +4,7 @@
     font-weight: normal;
     src: local('DINPro Bold'), url('DINPro-Bold tr.woff') format('woff');
 }
+
 @font-face {
     font-family: 'DINPro Black';
     font-style: normal;
@@ -11,17 +12,17 @@
     src: local('DINPro Black'), url('DINPro-Black tr.woff') format('woff');
 }
 
-html{
+html {
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
 
-.container{
+.container {
     max-width: 90% !important;
 }
 
 /* Background Initializer */
-#homepage{
+#homepage {
     background-image: url(homepage.svg);
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -35,18 +36,18 @@ html{
     text-align: center !important;
 }
 
-.section-top{
+.section-top {
     padding-top: calc(7.5rem + 5.8125rem);
 }
 
-.section{
+.section {
     padding-bottom: 3.5rem;
     position: relative;
     display: block;
 }
 
 /* Nav Styling */
-.nav-pre{
+.nav-pre {
     background-color: white;
     font-family: 'DINPro Black';
     color: black;
@@ -56,83 +57,83 @@ html{
     padding-left: 2rem !important;
 }
 
-.nav-text{
+.nav-text {
     color: black !important;
     font-family: 'DINPro Black' !important;
-    
+
 }
 
 /* Text */
-.text{
+.text {
     font-family: 'DINPro Black';
     color: black;
     text-align: center;
 }
 
 /* Body Text */
-#we{
+#we {
     font-size: 43px;
     margin-top: 1rem;
     margin-bottom: .9rem;
 }
 
-#moovement{
+#moovement {
     font-size: 100px;
     line-height: 5.5rem;
     margin-top: .25vw;
     margin-bottom: 1rem;
 }
 
-#join{
-    font-size: 20px; 
-    letter-spacing: .05vw !important; 
-    line-height: 2.8rem; 
+#join {
+    font-size: 20px;
+    letter-spacing: .05vw !important;
+    line-height: 2.8rem;
     margin-bottom: 1vw;
 }
 
-#learnmore{ 
-    font-size: 19px; 
+#learnmore {
+    font-size: 19px;
     letter-spacing: .05vw;
     text-align: center;
 }
 
 /* About Us */
-#newsletter:hover{
+#newsletter:hover {
     color: black !important;
 }
 
-#aboutus{
+#aboutus {
     padding-top: 6.5rem;
     margin-top: -70px;
     padding-bottom: 80px;
 }
 
-.about-body{
+.about-body {
     font-family: 'DINPro Bold';
     color: #343a40 !important;
 }
 
-.jumbotron{
+.jumbotron {
     background-color: white !important;
-    box-shadow:  0 1.375rem 2.25rem -0.75rem #b7b7b7;
+    box-shadow: 0 1.375rem 2.25rem -0.75rem #b7b7b7;
     border-radius: 12px !important;
     padding-top: 7rem !important;
     padding-bottom: 6rem !important;
 }
 
-.jumbo-text{
+.jumbo-text {
     font-size: 1.6rem;
 }
 
-#v1{
+#v1 {
     border-left: 1px solid #8dcdf1;
     height: 17vh;
 }
 
-#v2{
+#v2 {
     border-top: 1px solid #8dcdf1;
-    margin-bottom: 1.5rem!important;
-    margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
     box-sizing: content-box;
     height: 0;
     overflow: visible;
@@ -141,20 +142,70 @@ html{
     width: 79.5vw;
 }
 
-/* Meet the Team */
-#team{
+/* Facts */
+#facts {
     padding-top: 60px;
     margin-top: -90px;
     padding-bottom: 80px;
 }
 
-#team-title{
+#facts-title {
+    font-size: 2.5rem;
+    margin-top: 5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+#body-border {
+    border: 1px solid rgba(0, 0, 0, .125) !important;
+    border-top-style: hidden !important;
+}
+
+.list-group-item {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border: 1px solid rgba(0, 0, 0, .125) !important;
+    font-family: 'DINPro Bold' !important;
+}
+
+.list-group-item.active{
+    background-color: #8dcdf1 !important;
+    border: none !important;
+}
+
+.btn-primary{
+    width: 100% !important;
+    background-color: #8dcdf1 !important;
+    border: none !important;
+}
+
+.card-img{
+    height: 300px !important;
+    vertical-align: bottom !important;
+}
+
+.p-text{
+    font-family: 'DINPro Bold' !important;
+    letter-spacing: 0.25px;
+    font-size: 1rem !important;
+    color: #485057;
+    line-height: 20px !important;
+    
+}
+
+/* Meet the Team */
+#team {
+    padding-top: 60px;
+    margin-top: -90px;
+    padding-bottom: 80px;
+}
+
+#team-title {
     font-size: 2.5rem;
     margin-top: 5rem !important;
     margin-bottom: 5rem !important;
 }
 
-.card{
+.card {
     background-color: white !important;
     border: transparent !important;
     box-shadow: 0 1.375rem 2.25rem -0.75rem #b7b7b7;
@@ -162,13 +213,13 @@ html{
     border-bottom-right-radius: 10px !important;
 }
 
-.card-profile{
+.card-profile {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
 }
 
-.card-avatar{
+.card-avatar {
     max-width: 130px;
     max-height: 130px;
     width: 130px;
@@ -176,50 +227,50 @@ html{
     border-radius: 60% !important;
 }
 
-.card-header{
+.card-header {
     background-color: transparent !important;
     border-bottom: none !important;
     padding: 0 !important;
-    box-shadow: 0 16px 38px -12px rgba(88, 88, 88,.15), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    box-shadow: 0 16px 38px -12px rgba(88, 88, 88, .15), 0 4px 25px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
 }
 
-.card-footer{
+.card-footer {
     border-bottom-left-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
 }
 
-.card-name{
+.card-name {
     font-family: 'DINPro Bold' !important;
 }
 
-.card-role{
-    font-family: Roboto,Helvetica,Arial,sans-serif;
+.card-role {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: .75rem;
     text-transform: uppercase;
     font-weight: 550 !important;
 }
 
-.card-text{
+.card-text {
     font-family: 'DINPro Bold' !important;
     font-size: .875rem;
     color: #999;
 }
 
-.card-body{
+.card-body {
     margin-top: 15px;
 }
 
-.card-title{
+.card-title {
     margin-top: .625rem;
     margin-bottom: .75rem;
 }
 
-.card-category{
+.card-category {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.card-footer{
+.card-footer {
     background-color: transparent !important;
     border-top: none !important;
     padding-top: 0 !important;
@@ -227,12 +278,12 @@ html{
     margin-top: -15px;
 }
 
-p{
+p {
     margin-bottom: 10px !important;
 }
 
 /* Contact Us */
-.contactus-background{
+.contactus-background {
     background-image: url(homepage.svg);
     background-size: cover;
     background-position: 50%;
@@ -240,12 +291,12 @@ p{
     padding-top: 11rem;
 }
 
-.contact-title{
+.contact-title {
     font-size: 2rem !important;
     text-align: left !important;
 }
 
-.card-contact-avatar{
+.card-contact-avatar {
     background: #8dcdf1 !important;
     padding: 1rem 15px !important;
     margin-top: -30px;
@@ -255,31 +306,31 @@ p{
     box-shadow: 0 11px 20px 0 rgba(235, 248, 255, 0.41), 0 8px 24px -11px #52809a;
 }
 
-.card-shadow{
+.card-shadow {
     box-shadow: -1.5rem 1.375rem 2.25rem -1.75rem #b9b9b98a !important;
 }
 
-#find-shade{
+#find-shade {
     background: white !important;
     border-radius: 10px;
 }
 
 /* Line Styling */
-a{
-    border-style: hidden !important; 
+a {
+    border-style: hidden !important;
 }
 
-a:hover{
+a:hover {
     color: black !important;
     text-decoration: none !important;
 }
 
-hr{
+hr {
     margin-top: 4px !important;
     margin-bottom: 0 !important;
 }
 
-.line{
+.line {
     border: .5px;
     border-style: solid;
     border-color: black;
@@ -287,22 +338,22 @@ hr{
 }
 
 /* Buttons */
-.btn-outline-dark{
+.btn-outline-dark {
     border-style: hidden !important;
     margin-top: 5px;
 }
 
-.btn-outline-dark:hover{
+.btn-outline-dark:hover {
     color: white !important;
     background-color: black !important;
 }
 
-.btn-lg{
+.btn-lg {
     line-height: 1.15 !important;
     font-size: 18px !important;
 }
 
-.btn-dark{
+.btn-dark {
     background-color: black !important;
     line-height: 1.5 !important;
     border-color: black !important;
